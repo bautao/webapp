@@ -44,13 +44,28 @@ export class FachtestAllroundComponent {
       return ((this.input2 - 75) / 10.9).toFixed(2);
     }
 
-    get resultMixed2M1F2(): string {
+    get resultMixed5M1F2(): string {
       if (this.input2 === null) return '—';
-      return (((1 * (this.input2 - 46) / 10.6) + (2 * (this.input2 - 75) / 10.9)) / (1 + 2)).toFixed(2);
+      return (((1 * (this.input2 - 46) / 10.6) + (5 * (this.input2 - 75) / 10.9)) / (1 + 5)).toFixed(2);
     }
 
-    get resultMixed1M2F2(): string {
+    get resultMixed4M2F2(): string {
       if (this.input2 === null) return '—';
-      return (((2 * (this.input2 - 46) / 10.6) + (1 * (this.input2 - 75) / 10.9)) / (2 + 1)).toFixed(2);
+      return (((2 * (this.input2 - 46) / 10.6) + (4 * (this.input2 - 75) / 10.9)) / (2 + 4)).toFixed(2);
+    }
+
+    get resultMixed3M3F2(): string {
+      if (this.input2 === null) return '—';
+      return (((3 * (this.input2 - 46) / 10.6) + (3 * (this.input2 - 75) / 10.9)) / (2 + 4)).toFixed(2);
+    }
+
+    get resultMixed2M4F2(): string {
+      if (this.input2 === null) return '—';
+      return (((4 * (this.input2 - 46) / 10.6) + (2 * (this.input2 - 75) / 10.9)) / (2 + 4)).toFixed(2);
+    }
+
+    get resultMixed1M5F2(): string {
+      if (this.input2 === null) return '—';
+      return (((5 * (this.input2 - 46) / 10.6) + (1 * (this.input2 - 75) / 10.9)) / (2 + 4)).toFixed(2);
     }
   }
