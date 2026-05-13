@@ -3,7 +3,8 @@
   <h1>Fachtest allround</h1>
 
   <div class="form">
-    <label for="d-input">Input (d)</label>
+    <h2>Test 1</h2>
+    <label for="d-input">Punkte</label>
     <input id="d-input" type="number" [(ngModel)]="input" placeholder="Enter a number" />
 
     <div class="result-box">
@@ -24,6 +25,32 @@
     <div class="result-box">
       <span class="label">3 Frauen</span>
       <span class="value">{{ result }}</span>
+    </div>
+  </div>
+
+  <div class="form">
+    <h2>Test 2</h2>
+    <label for="d-input2">Punkte</label>
+    <input id="d-input2" type="number" [(ngModel)]="input2" placeholder="Enter a number" />
+
+    <div class="result-box">
+      <span class="label">3 Männer</span>
+      <span class="value">{{ resultMen2 }}</span>
+    </div>
+
+    <div class="result-box">
+      <span class="label">2 Männer 1 Frau</span>
+      <span class="value">{{ resultMixed2M1F2 }}</span>
+    </div>
+
+    <div class="result-box">
+      <span class="label">1 Mann 2 Frauen</span>
+      <span class="value">{{ resultMixed1M2F2 }}</span>
+    </div>
+
+    <div class="result-box">
+      <span class="label">3 Frauen</span>
+      <span class="value">{{ result2 }}</span>
     </div>
   </div>
 </main>
