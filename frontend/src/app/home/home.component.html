@@ -1,0 +1,10 @@
+<main class="home">
+  <h1 class="site-title">Title</h1>
+  <div class="card-grid">
+    @for (app of apps; track app.route) {
+    <a [routerLink]="app.route" class="card">
+      <span class="card-title">{{ app.title }}</span>
+    </a>
+    }
+  </div>
+</main>

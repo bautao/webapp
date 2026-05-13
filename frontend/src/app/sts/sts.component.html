@@ -1,0 +1,14 @@
+<main class="page">
+  <a routerLink="/">← Back</a>
+  <h1>STS</h1>
+
+  <div class="form">
+    <label for="d-input">Input (d)</label>
+    <input id="d-input" type="number" [(ngModel)]="input" placeholder="Enter a number" />
+
+    <div class="result-box">
+      <span class="label">Result</span>
+      <span class="value">{{ result }}</span>
+    </div>
+  </div>
+</main>
