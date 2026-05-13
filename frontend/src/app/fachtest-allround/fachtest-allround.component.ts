@@ -25,7 +25,6 @@ export class FachtestAllroundComponent {
 
     get resultMixed2M1F(): string {
       if (this.input === null) return '—';
-      //((1 * (this.input + 71) / 16.2) + (2 * (this.input + 33) / 16.2)) / (1 + 2)
       return (((1 * (this.input + 71) / 16.2) + (2 * (this.input + 33) / 16.2)) / (1 + 2)).toFixed(2);
     }
 
